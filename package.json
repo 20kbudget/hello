@@ -7,9 +7,14 @@
   "author": "Fabricio C Zuardi <fabricio@fabricio.org>",
   "license": "AGPL-3.0",
   "scripts": {
-      "destroy": "rm -rf ./dist",
-      "create": "cordova create dist com.mnmo.hello Hello --template cordova-game-shell",
-      "postcreate": "cd dist && cordova platform add android",
-      "debug": "cd dist && cordova run"
+    "destroy": "rm -rf ./dist",
+    "create": "cordova create dist com.mnmo.hello Hello --template cordova-game-shell",
+    "postcreate": "cd dist && cordova platform add android",
+    "debug": "cd dist && cordova run",
+    "start": "bankai index.js",
+    "build": "bankai build -O index.js tmp && cp ./tmp/*.js ./tmp/*.css ./dist/www/."
+  },
+  "devDependencies": {
+    "bankai": "^5.4.0"
   }
 }
