@@ -10,11 +10,17 @@
     "destroy": "rm -rf ./dist",
     "create": "cordova create dist com.mnmo.hello Hello --template cordova-game-shell",
     "postcreate": "cd dist && cordova platform add android",
-    "debug": "cd dist && cordova run",
     "start": "bankai index.js",
-    "build": "bankai build -O index.js tmp && cp ./tmp/*.js ./tmp/*.css ./dist/www/."
+    "build": "bankai build index.js tmp && cp ./tmp/*.js ./tmp/*.css ./dist/www/.",
+    "predebug": "yarn build",
+    "debug": "cd dist && cordova run",
+    "format": "prettier --write --single-quote --tab-width 4 index.js"
   },
   "devDependencies": {
-    "bankai": "^5.4.0"
+    "bankai": "^5.4.0",
+    "prettier": "^0.18.0"
+  },
+  "dependencies": {
+    "pixi.js": "^4.3.5"
   }
 }
