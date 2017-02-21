@@ -1,0 +1,9 @@
+{
+  "name": "hello",
+  "version": "0.1.0",
+  "description": "A pixi + cordova hello world",
+  "main": "index.js",
+  "repository": "git@github.com:20kbudget/hello.git",
+  "author": "Fabricio C Zuardi <fabricio@fabricio.org>",
+  "license": "AGPL-3.0"
+}
