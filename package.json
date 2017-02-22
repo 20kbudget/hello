@@ -13,7 +13,7 @@
     "start": "bankai index.js",
     "build": "bankai build --js [--transform es2040] -O index.js tmp && cp ./tmp/*.js ./tmp/*.css ./dist/www/.",
     "predebug": "yarn build",
-    "debug": "cd dist && cordova run",
+    "debug": "cd dist && cordova run --device",
     "format": "prettier --write --single-quote --tab-width 4 index.js"
   },
   "devDependencies": {
