@@ -11,7 +11,7 @@
     "create": "cordova create dist com.mnmo.hello Hello --template cordova-game-shell",
     "postcreate": "cd dist && cordova platform add android",
     "start": "bankai index.js",
-    "build": "bankai build --js [--transform es2040] -O index.js tmp && cp ./tmp/*.js ./tmp/*.css ./dist/www/.",
+    "build": "bankai build -O index.js tmp && cp ./tmp/*.js ./tmp/*.css ./dist/www/.",
     "predebug": "yarn build",
     "debug": "cd dist && cordova run --device",
     "format": "prettier --write --single-quote --tab-width 4 index.js"
@@ -23,5 +23,8 @@
   },
   "dependencies": {
     "pixi.js": "^4.3.5"
+  },
+  "browserify": {
+    "transform": ["es2040"]
   }
 }
