@@ -12,7 +12,7 @@
     "postcreate": "cd dist && cordova platform add android",
     "start": "bankai index.js",
     "build": "bankai build index.js tmp",
-    "postbuild": "cp ./tmp/*.js ./tmp/*.css ./dist/www/.",
+    "postbuild": "cp ./tmp/*.js ./tmp/*.css ./dist/www/. && cp ./src/config.xml ./dist/.",
     "debug": "cd dist && cordova run --device",
     "prerelease": "yarn build -- -O",
     "release": "yarn debug",
