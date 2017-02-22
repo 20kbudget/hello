@@ -11,13 +11,14 @@
     "create": "cordova create dist com.mnmo.hello Hello --template cordova-game-shell",
     "postcreate": "cd dist && cordova platform add android",
     "start": "bankai index.js",
-    "build": "bankai build index.js tmp && cp ./tmp/*.js ./tmp/*.css ./dist/www/.",
+    "build": "bankai build --js [--transform es2040] -O index.js tmp && cp ./tmp/*.js ./tmp/*.css ./dist/www/.",
     "predebug": "yarn build",
     "debug": "cd dist && cordova run",
     "format": "prettier --write --single-quote --tab-width 4 index.js"
   },
   "devDependencies": {
     "bankai": "^5.4.0",
+    "es2040": "^1.2.4",
     "prettier": "^0.18.0"
   },
   "dependencies": {
