@@ -7,7 +7,6 @@ const text = 'Hello World';
 const app = new Application();
 const { view, stage } = app;
 view.className = styles.canvas;
-document.body.appendChild(view);
 
 const centerSprite = s => {
     s.anchor.set(0.5, 0.5);
@@ -15,5 +14,18 @@ const centerSprite = s => {
 };
 
 const sprite = new Text(text, styles.text);
-centerSprite(sprite);
 stage.addChild(sprite);
+
+const init = () => {
+    centerSprite(sprite);
+    document.body.appendChild(view);
+};
+
+if (window.cordova){
+    document.addEventListener("deviceready", init, false);
+} else {
+    init();
+}
+
+
+
