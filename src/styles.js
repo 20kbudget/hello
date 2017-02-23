@@ -9,7 +9,8 @@ const canvas = css`
 const text = {
     fontFamily: 'Arial',
     fontSize: 70,
-    fill: 0xffff00,
+    stroke: 0xffffff,
+    strokeThickness: 3,
     align: 'center'
 };
 

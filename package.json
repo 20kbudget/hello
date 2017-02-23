@@ -24,9 +24,13 @@
     "prettier": "^0.18.0"
   },
   "dependencies": {
-    "pixi.js": "^4.3.5"
+    "pixi.js": "^4.3.5",
+    "pull-stream": "^3.5.0",
+    "xtend": "^4.0.1"
   },
   "browserify": {
-    "transform": ["es2040"]
+    "transform": [
+      "es2040"
+    ]
   }
 }
