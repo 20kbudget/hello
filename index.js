@@ -1,11 +1,9 @@
 const styles = require('./src/styles');
-const colorStreams = require('./src/colors');
+const { color, click, changeColor, changeText } = require('./src/colors');
 const pull = require('pull-stream');
-const Pixi = require('pixi.js');
-const { colorSource, changeColorSink } = colorStreams;
-const { Application, Text } = Pixi;
+const { Application, Text } = require('pixi.js');
 
-const text = 'Hello World';
+const text = `Hello World ${0xffffff}`;
 
 const centerSprite = s => {
     s.anchor.set(0.5, 0.5);
@@ -21,8 +19,8 @@ stage.addChild(sprite);
 
 const init = () => {
     centerSprite(sprite);
-    pull(colorSource, changeColorSink(sprite));
     document.body.appendChild(view);
+    pull(color, pull.take(10), click(sprite), changeText(sprite), changeColor(sprite));
 };
 
 if (window.cordova) {
