@@ -1,5 +1,6 @@
 const styles = require('./src/styles');
-const { color, click, changeColor, changeText } = require('./src/colors');
+const listen = require('pull-pixi-sprite-event');
+const { color, changeColor, changeText } = require('./src/colors');
 const pull = require('pull-stream');
 const { Application, Text } = require('pixi.js');
 
@@ -20,7 +21,7 @@ stage.addChild(sprite);
 const init = () => {
     centerSprite(sprite);
     document.body.appendChild(view);
-    pull(color, pull.take(10), click(sprite), changeText(sprite), changeColor(sprite));
+    pull(color, pull.take(10), listen(sprite, 'pointerdown'), changeText(sprite), changeColor(sprite));
 };
 
 if (window.cordova) {

@@ -57,6 +57,12 @@ ansi-styles@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-2.2.1.tgz#b432dd3358b634cf75e1e4664368240533c1ddbe"
 
+ansi-styles@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/ansi-styles/-/ansi-styles-3.0.0.tgz#5404e93a544c4fec7f048262977bebfe3155e0c1"
+  dependencies:
+    color-convert "^1.0.0"
+
 anymatch@^1.3.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/anymatch/-/anymatch-1.3.0.tgz#a3e52fa39168c825ff57b0248126ce5a8ff95507"
@@ -733,6 +739,16 @@ cliui@^2.1.0:
 code-point-at@^1.0.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/code-point-at/-/code-point-at-1.1.0.tgz#0d070b4d043a5bea33a2f1a40e2edb3d9a4ccf77"
+
+color-convert@^1.0.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/color-convert/-/color-convert-1.9.0.tgz#1accf97dd739b983bf994d56fec8f95853641b7a"
+  dependencies:
+    color-name "^1.1.1"
+
+color-name@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/color-name/-/color-name-1.1.1.tgz#4b1415304cf50028ea81643643bd82ea05803689"
 
 colors@>=0.6.2:
   version "1.1.2"
@@ -1641,21 +1657,21 @@ isstream@~0.1.2:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/isstream/-/isstream-0.1.2.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
 
-jest-matcher-utils@^18.1.0:
-  version "18.1.0"
-  resolved "https://registry.yarnpkg.com/jest-matcher-utils/-/jest-matcher-utils-18.1.0.tgz#1ac4651955ee2a60cef1e7fcc98cdfd773c0f932"
+jest-matcher-utils@^19.0.0:
+  version "19.0.0"
+  resolved "https://registry.yarnpkg.com/jest-matcher-utils/-/jest-matcher-utils-19.0.0.tgz#5ecd9b63565d2b001f61fbf7ec4c7f537964564d"
   dependencies:
     chalk "^1.1.3"
-    pretty-format "^18.1.0"
+    pretty-format "^19.0.0"
 
-jest-validate@18.2.0:
-  version "18.2.0"
-  resolved "https://registry.yarnpkg.com/jest-validate/-/jest-validate-18.2.0.tgz#01f93ac78f23901cf9889808e2bbb931ffc58d86"
+jest-validate@19.0.0:
+  version "19.0.0"
+  resolved "https://registry.yarnpkg.com/jest-validate/-/jest-validate-19.0.0.tgz#8c6318a20ecfeaba0ba5378bfbb8277abded4173"
   dependencies:
     chalk "^1.1.1"
-    jest-matcher-utils "^18.1.0"
+    jest-matcher-utils "^19.0.0"
     leven "^2.0.0"
-    pretty-format "^18.1.0"
+    pretty-format "^19.0.0"
 
 jodid25519@^1.0.0:
   version "1.0.2"
@@ -2086,9 +2102,9 @@ pixi-gl-core@^1.0.3:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/pixi-gl-core/-/pixi-gl-core-1.1.0.tgz#a52cb4dd3254f9c7857a0e9c2356b00e6ec0c761"
 
-pixi.js@^4.3.5:
-  version "4.3.5"
-  resolved "https://registry.yarnpkg.com/pixi.js/-/pixi.js-4.3.5.tgz#26fe02a9fe8d54b8a05b00dffd127e299b2f4670"
+pixi.js@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/pixi.js/-/pixi.js-4.4.0.tgz#0dfdf0822f35cd54d0545c201a5414cec07583c5"
   dependencies:
     bit-twiddle "^1.0.2"
     earcut "^2.0.7"
@@ -2096,7 +2112,7 @@ pixi.js@^4.3.5:
     ismobilejs "^0.4.0"
     object-assign "^4.0.1"
     pixi-gl-core "^1.0.3"
-    resource-loader "^2.0.4"
+    resource-loader "^2.0.6"
 
 plur@^1.0.0:
   version "1.0.0"
@@ -2138,9 +2154,9 @@ prettier-bytes@^1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/prettier-bytes/-/prettier-bytes-1.0.3.tgz#932b31c23efddb36fc66a82dcef362af3122982f"
 
-prettier@^0.18.0:
-  version "0.18.0"
-  resolved "https://registry.yarnpkg.com/prettier/-/prettier-0.18.0.tgz#9ef5918d53a56946cbc90c213be0db0b0aaea73c"
+prettier@^0.19.0:
+  version "0.19.0"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-0.19.0.tgz#8b473989a51c76649ea1e2eb7ea3f055cc4b8422"
   dependencies:
     ast-types "0.9.4"
     babel-code-frame "6.22.0"
@@ -2150,14 +2166,14 @@ prettier@^0.18.0:
     flow-parser "0.38.0"
     get-stdin "5.0.1"
     glob "7.1.1"
-    jest-validate "18.2.0"
+    jest-validate "19.0.0"
     minimist "1.2.0"
 
-pretty-format@^18.1.0:
-  version "18.1.0"
-  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-18.1.0.tgz#fb65a86f7a7f9194963eee91865c1bcf1039e284"
+pretty-format@^19.0.0:
+  version "19.0.0"
+  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-19.0.0.tgz#56530d32acb98a3fa4851c4e2b9d37b420684c84"
   dependencies:
-    ansi-styles "^2.2.1"
+    ansi-styles "^3.0.0"
 
 pretty-ms@^2.1.0:
   version "2.1.0"
@@ -2381,7 +2397,7 @@ resolve@^1.1.3, resolve@^1.1.4, resolve@^1.1.7:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.2.0.tgz#9589c3f2f6149d1417a40becc1663db6ec6bc26c"
 
-resource-loader@^2.0.4:
+resource-loader@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/resource-loader/-/resource-loader-2.0.6.tgz#30961188a05d5e729fc452977e058712d0f34f44"
   dependencies:
