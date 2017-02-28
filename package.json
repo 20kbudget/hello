@@ -20,12 +20,14 @@
   },
   "devDependencies": {
     "bankai": "^5.4.0",
+    "browserify": "^14.1.0",
     "es2040": "^1.2.4",
-    "prettier": "^0.20.0"
+    "prettier": "^0.20.0",
+    "uglify-js": "^2.8.1"
   },
   "dependencies": {
     "pixi.js": "^4.4.1",
-    "pull-pixi-sprite-event": "^0.1.2",
+    "pull-pixi-sprite-event": "^0.2.1",
     "pull-stream": "^3.5.0",
     "xtend": "^4.0.1"
   },
