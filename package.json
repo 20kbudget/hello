@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "pixi.js": "^4.4.1",
+    "pull-pixi-sprite-event": "^0.1.2",
     "pull-stream": "^3.5.0",
     "xtend": "^4.0.1"
   },

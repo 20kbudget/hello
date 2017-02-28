@@ -2209,6 +2209,10 @@ public-encrypt@^4.0.0:
     parse-asn1 "^5.0.0"
     randombytes "^2.0.1"
 
+pull-pixi-sprite-event@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/pull-pixi-sprite-event/-/pull-pixi-sprite-event-0.1.2.tgz#ccc326714ce19df9dee97eaca4a5962847247639"
+
 pull-stream@^3.5.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/pull-stream/-/pull-stream-3.5.0.tgz#1ee5b6f76fd3b3a49a5afb6ded5c0320acb3cfc7"
