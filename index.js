@@ -21,7 +21,13 @@ stage.addChild(sprite);
 const init = () => {
     centerSprite(sprite);
     document.body.appendChild(view);
-    pull(color, pull.take(10), listen(sprite, 'pointerdown'), changeText(sprite), changeColor(sprite));
+    pull(
+        color,
+        pull.take(10),
+        listen(sprite, 'pointerdown'),
+        changeText(sprite),
+        changeColor(sprite)
+    );
 };
 
 if (window.cordova) {
